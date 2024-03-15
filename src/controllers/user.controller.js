@@ -1,7 +1,7 @@
 const User = require('../model/user.model');
 const { sendResponse } = require('../utils/sendResponse');
 
-const users = []; // Hardcoded data
+const users = [];
 
 // Create a user
 exports.createUser = async (req, res) => {
@@ -15,7 +15,7 @@ exports.createUser = async (req, res) => {
   }
 };
 
-// Read all users
+// get all users
 exports.getAllUsers = (req, res) => {
   sendResponse(res, 200, 'All users', users);
 };
